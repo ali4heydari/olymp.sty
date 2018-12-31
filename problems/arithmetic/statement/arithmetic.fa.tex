@@ -1,27 +1,28 @@
-\gdef\thisproblemauthor{Ivan Kazmenko}
-\gdef\thisproblemdeveloper{Ivan Kazmenko}
-\gdef\thisproblemorigin{\texttt{XXXIII} St. Petersburg State University Championship}
-\begin{problem}{Arithmetic on a Board}
+\gdef\thisproblemauthor{نام صاحب اثر اینجا قرار می‌گیرد}
+\gdef\thisproblemdeveloper{نام توسعه‌دهنده اینجا قرار می‌گیرد}
+\gdef\thisproblemorigin{\texttt{XXXIII} نام منبع اینجا قرار می‌گیرد}
+\begin{problem}{نام سوال اینجا قرار می‌گیرد}
 {arithmetic.in}{arithmetic.out}
-{2 seconds (\textsl{3 seconds for Java})}{256 mebibytes}{}
+{۵ ثانیه}{۲۵۶ MB}{}
 
-Evgenia wrote $n$ positive integers on a board.
-Aleksey can erase any two integers $x$ and $y$, replacing them
-by either $x + y$ or $x \cdot y$ or $|x - y|$.
-Aleksey makes replacements until there is only one integer left.
-What is the minimal integer Aleksey can get after all replacements?
+    فرید که مهندس کامپیوتر است برای ادامه تحصیل به دیار غربت مهاجرت کرده است و برای تامین مخارج خود در یک فروشگاه زنجیره‌ای به عنوان صندوقدار مشغول به کار شده است. او هر روز باید اطلاعات تعداد زیادی صورت حساب‌ خرید کالا را وارد سیستم کند که این کار برایش بسیار خسته‌کننده است بخصوص که این صورت حساب‌ها به روش غریبی صادر می‌شوند و ممکن است قیمت‌ها به اشتباه وارد شده باشند. در این روش صورت‌ حساب‌ها به صورت رشته‌ای هستند که در آن اسم و قیمت کالاها پشت سر هم و بدون فاصله نوشته شده‌‌اند. به این ترتیب فرم کلی یک صورت حساب به شکل زیر است:
 
-\InputFile
+    $$"name_1price_1name_2price_2...name_nprice_n"$$
 
-The first line of input contains an integer $n$
-($1 \le n \le 100\,000$).
-The second line contains a space-separated list of $n$ integers
-$a_1$, $a_2$, $\ldots$, $a_n$ which Evgenia initially wrote on the board
-($1 \le a_i \le 30$).
+    که در آن $name_i$ نشان‌دهنده‌ی نام کالای ‌$-i$ام و رشته‌ایی ناتهی و با طول حداکثر ۱۰ از حروف انگلیسی کوچک و $price_i$ نشان‌دهنده‌ی قیمت آن و متشکل از رقم و کاراکتر نقطه است.
+    ممکن است کالاهایی اسم یکسان و قیمت متفاوت داشته باشند. همچنین فرید می‌داند که همیشه نام کالاها به درستی چاپ می‌شوند اما ممکن است تعدادی از قیمت‌ها به اشتباه باشند و او تنها باید جمع صورت حساب‌هایی را وارد سیستم کند که تمام قیمت‌ها در آن درست آمده باشند.
 
+    قیمت‌های درست به صورت زیر هستند:
+    اگر قیمت کالایی مضرب صحیحی از یک دلار باشد، بدون اعشار نوشته می‌شود. در غیر این صورت ابتدا بخش صحیح سپس یک نقطه و بعد قسمت اعشاری به صورت دقیقا دو رقمی نوشته می‌شود.
+    هر سه رقم (از کمترین ارزش به بیشترین) در بخش صحیح با نقطه جدا می شوند.
+    صفر اضافی در سمت چپ وجود ندارد.
+    \InputFile
+
+    ورودی تنها شامل یک خط است که در آن رشته‌ای ناتهی و با طول حداکثر $1000$ کاراکتر آمده‌است. همچنین قیمت‌ها (در صورت مطابقت با نمونه ورودی درست) کمتر از یک سنت و بیشتر از $10^6$ دلار نمی‌باشند.
 \OutputFile
 
-On the first line, print the minimal integer Aleksey can get.
+    اگر قیمتی در ورودی مطابق با ضوابط بالا نباشد در خروجی عبارت "‌Invalid Input" چاپ شده و درغیر این صورت مجموع تمام قیمت‌ها به **دقیقا** همان فرم توضیح داده ‌شده چاپ شود.
+
 
 \Examples
 
