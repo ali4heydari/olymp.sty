@@ -19,42 +19,43 @@
     \InputFile
 
     ورودی تنها شامل یک خط است که در آن رشته‌ای ناتهی و با طول حداکثر $1000$ کاراکتر آمده‌است. همچنین قیمت‌ها (در صورت مطابقت با نمونه ورودی درست) کمتر از یک سنت و بیشتر از $10^6$ دلار نمی‌باشند.
-\OutputFile
+    \OutputFile
 
     اگر قیمتی در ورودی مطابق با ضوابط بالا نباشد در خروجی عبارت "‌Invalid Input" چاپ شده و درغیر این صورت مجموع تمام قیمت‌ها به **دقیقا** همان فرم توضیح داده ‌شده چاپ شود.
 
 
-\Examples
+    \Examples
 
-\begin{example}
-\exmp{
-2
-1 2
-}{%
-1
-}%
-\exmp{
-3
-1 2 3
-}{%
-0
-}%
-\exmp{
-4
-16 2 3 4
-}{%
-2
-}%
-\end{example}
+    \begin{example}
+        \exmp{
+        2
+        1 2
+        }{%
+        1
+        }%
+        \exmp{
+        3
+        1 2 3
+        }{%
+        0
+        }%
+        \exmp{
+        4
+        16 2 3 4
+        }{%
+        2
+        }
+        %
+    \end{example}
 
-\Explanations
+    \Explanations
 
-In the first example, you can replace $1$ and $2$ by $|2 - 1| = 1$.
+    In the first example, you can replace $1$ and $2$ by $|2 - 1| = 1$.
 
-In the second example, you can first replace $1$ and $2$ by $1 + 2 = 3$,
-and after that, get $|3 - 3| = 0$.
+    In the second example, you can first replace $1$ and $2$ by $1 + 2 = 3$,
+    and after that, get $|3 - 3| = 0$.
 
-In the third example, one way to get a two is the following:
-$2 + 4 = 6$, $3 \cdot 6 = 18$ and $|16 - 18| = 2$.
+    In the third example, one way to get a two is the following:
+    $2 + 4 = 6$, $3 \cdot 6 = 18$ and $|16 - 18| = 2$.
 
 \end{problem}
