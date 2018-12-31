@@ -9,16 +9,15 @@
 
 \usepackage{verbatim}
 
-
 \newif\if@landscape\@landscapefalse
-\newif\if@russian\@russianfalse
+\newif\if@persian\@persianfalse
 \newif\if@arabic\@arabicfalse
 
 \DeclareOption{landscape}{
     \@landscapetrue
 }
-\DeclareOption{russian}{
-    \@russiantrue
+\DeclareOption{persian}{
+    \@persiantrue
 }
 \DeclareOption{arabic}{
     \@arabictrue
@@ -118,7 +117,7 @@
 \newlength{\afterconstraints}
 
 \renewcommand{\t}[1]{\ifmmode{\mathtt{#1}}\else{\texttt{#1}}\fi}
-\if@russian
+\if@persian
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
 \renewcommand{\leq}{\leqslant}
@@ -132,7 +131,7 @@
 
 % -- Setup keywords --
 
-\if@russian
+\if@persian
 \def\kw@ProblemTutorial{سوال آموزشی}
 \def\kw@Problem{سوال}
 \def\kw@ProblemAuthor{صاحب اثر:}
@@ -320,13 +319,13 @@
 
 % -- Default limits definition --
 
-\if@russian
+\if@persian
 \def\defaulttimelimit{2 секунды}
 \else
 \def\defaulttimelimit{2 seconds}
 \fi
 
-\if@russian
+\if@persian
 \def\defaultmemorylimit{256 мебибайт}
 \else
 \def\defaultmemorylimit{256 mebibytes}
@@ -364,7 +363,7 @@
 \newenvironment{tutorial}[1]{%
     \bigskip%
     \noindent%
-    \if@russian%
+    \if@persian%
     \textbf{\problemheadfont\textsf{\kw@ProblemTutorial\ <<#1>>}}%
     \else%
     \textbf{\problemheadfont\textsf{\kw@ProblemTutorial:\ ``#1''}}%

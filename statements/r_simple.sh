@@ -5,11 +5,11 @@ export DOPDFLATEX=false
 function doit()
 {
   if $DOPDFLATEX ; then
-    pdflatex $1.tex || exit 1
-    pdflatex $1.tex || exit 1
+    xelatex $1.tex || exit 1
+    xelatex $1.tex || exit 1
   else
-    latex $1.tex || exit 1
-    latex $1.tex || exit 1
+    xelatex $1.tex || exit 1
+    xelatex $1.tex || exit 1
     dvips -t a4 $1.dvi || exit 1
     dvipdfmx -p a4 $1 || exit 1
   fi
