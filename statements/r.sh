@@ -38,7 +38,7 @@ function doit()
 
 #svnversion .. > revision.temp | echo X > revision.temp
 mpost_make
-doit $NAME.ru || exit 1
+doit $NAME.fa || exit 1
 doit $NAME.en || exit 1
 #rm revision.temp
 #svnversion . ../problems/*/statement

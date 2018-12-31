@@ -20,5 +20,5 @@ done
 popd
 }
 
-rm --force $NAME{,.en,.ru}.{log,aux,dvi,ps,pdf}
+rm --force $NAME{,.en,.fa}.{log,aux,dvi,ps,pdf}
 mpost_clean
