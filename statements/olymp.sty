@@ -133,48 +133,48 @@
 % -- Setup keywords --
 
 \if@persian
-\def\kw@ProblemTutorial{سوال آموزشی}
-\def\kw@Problem{سوال}
-\def\kw@ProblemAuthor{صاحب اثر:}
-\def\kw@ProblemDeveloper{توسعه‌دهنده:}
-\def\kw@ProblemOrigin{منبع:}
-\def\kw@InputFileName{فایل ورودی:}
-\def\kw@OutputFileName{فایل خروجی:}
-\def\kw@TimeLimit{محدودیت زمان:}
-\def\kw@MemoryLimit{محدودیت حافظه:}
-\def\kw@Feedback{بازخورد:}
-\def\kw@stdin{ورودی استاندارد}
-\def\kw@stdout{خروجی استاندارد}
-\def\kw@Specification{مشخصات}
-\def\kw@Interaction{پروتکل تعامل}
-\def\kw@Input{ورودی}
-\def\kw@Output{خروجی}
-\def\kw@Example{مثال}
-\def\kw@Examples{مثال‌ها}
-\def\kwExampleNotes{یادداشت‌ها}
-\def\kw@Explanation{توضیح}
-\def\kw@Explanations{توضیحات}
-\def\kw@Illustration{تصویر}
-\def\kw@Scoring{نمره‌دهی}
-\def\kw@Note{یادداشت}
-\def\kw@Notes{یادداشت‌ها}
-\def\kw@Constraints{محدودیت‌ها}
-\def\kw@version{نسخه}
-\def\kw@revision{بازبینی}
-\def\kw@SubtaskOne{زیرمسئله‌ی ۱}
-\def\kw@SubtaskTwo{زیرمسئله‌ی ۲}
-\def\kw@SubtaskThree{زیرمسئله‌ی ۳}
-\def\kw@SubtaskFour{زیرمسئله‌ی ۴}
-\def\kw@SubtaskFive{زیرمسئله‌ی ۵}
-\def\kw@SubtaskSix{زیرمسئله‌ی ۶}
-\def\kw@Subtask{زیرمسئله}
-\def\kw@points{امتیازها}
-\def\kw@Page{صفحه}
-\def\kw@of{از}
-\def\kw@notstated{بیان نشده}
-\def\kw@IntentionallyBlankPage{این صفحه عمدا خالی رها شده است}
-\def\kw@defaultinputname{تست}
-\def\kw@defaultoutputname{جواب}
+\def\kw@ProblemTutorial{\rl{سوال آموزشی}}
+\def\kw@Problem{\rl{سوال}}
+\def\kw@ProblemAuthor{\rl{صاحب اثر:}}
+\def\kw@ProblemDeveloper{\rl{توسعه‌دهنده:}}
+\def\kw@ProblemOrigin{\rl{منبع:}}
+\def\kw@InputFileName{\rl{فایل ورودی:}}
+\def\kw@OutputFileName{\rl{فایل خروجی:}}
+\def\kw@TimeLimit{\rl{محدودیت زمان:}}
+\def\kw@MemoryLimit{\rl{محدودیت حافظه:}}
+\def\kw@Feedback{\rl{بازخورد:}}
+\def\kw@stdin{\rl{ورودی استاندارد}}
+\def\kw@stdout{\rl{خروجی استاندارد}}
+\def\kw@Specification{\rl{مشخصات}}
+\def\kw@Interaction{\rl{پروتکل تعامل}}
+\def\kw@Input{\rl{ورودی}}
+\def\kw@Output{\rl{خروجی}}
+\def\kw@Example{\rl{مثال}}
+\def\kw@Examples{\rl{مثال‌ها}}
+\def\kwExampleNotes{\rl{یادداشت‌ها}}
+\def\kw@Explanation{\rl{توضیح}}
+\def\kw@Explanations{\rl{توضیحات}}
+\def\kw@Illustration{\rl{تصویر}}
+\def\kw@Scoring{\rl{نمره‌دهی}}
+\def\kw@Note{\rl{یادداشت}}
+\def\kw@Notes{\rl{یادداشت‌ها}}
+\def\kw@Constraints{\rl{محدودیت‌ها}}
+\def\kw@version{\rl{نسخه}}
+\def\kw@revision{\rl{بازبینی}}
+\def\kw@SubtaskOne{\rl{زیرمسئله‌ی ۱}}
+\def\kw@SubtaskTwo{\rl{زیرمسئله‌ی ۲}}
+\def\kw@SubtaskThree{\rl{زیرمسئله‌ی ۳}}
+\def\kw@SubtaskFour{\rl{زیرمسئله‌ی ۴}}
+\def\kw@SubtaskFive{\rl{زیرمسئله‌ی ۵}}
+\def\kw@SubtaskSix{\rl{زیرمسئله‌ی ۶}}
+\def\kw@Subtask{\rl{زیرمسئله}}
+\def\kw@points{\rl{امتیازها}}
+\def\kw@Page{\rl{صفحه}}
+\def\kw@of{\rl{از}}
+\def\kw@notstated{\rl{بیان نشده}}
+\def\kw@IntentionallyBlankPage{\rl{این صفحه عمدا خالی رها شده است}}
+\def\kw@defaultinputname{\rl{تست}}
+\def\kw@defaultoutputname{\rl{جواب}}
 \else
 \def\kw@ProblemTutorial{Problem Tutorial}
 \def\kw@Problem{Problem}
@@ -321,13 +321,13 @@
 % -- Default limits definition --
 
 \if@persian
-\def\defaulttimelimit{۲ ثانیه}
+\def\defaulttimelimit{\rl{۲ ثانیه}}
 \else
 \def\defaulttimelimit{2 seconds}
 \fi
 
 \if@persian
-\def\defaultmemorylimit{۲۵۶ مگابایت}
+\def\defaultmemorylimit{\rl{۲۵۶ مگابایت}}
 \else
 \def\defaultmemorylimit{256 MB}
 \fi
@@ -517,6 +517,7 @@
 
 
 \ifdefined\NoExamples\else%
+\LTR
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\bf\texttt{\InputFileName}}&
@@ -534,6 +535,7 @@
 \ttfamily\obeylines\obeyspaces\frenchspacing
 \newcommand{\exmp}[2]{
 \ifdefined\NoExamples\else%
+\LTR
 \begin{tabular}{|c|}
 \hline
 \multicolumn{1}{|c|}{\bf\texttt{\InputFileName}}\\
@@ -589,6 +591,7 @@
 
 
 \ifdefined\NoExamples\else%
+\LTR
 \begin{tabular}{|l|l|l|}
 \hline
 \multicolumn{1}{|c|}{\bf\texttt{\InputFileName}}&
