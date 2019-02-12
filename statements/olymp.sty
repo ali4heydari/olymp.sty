@@ -416,7 +416,7 @@
 \noindent
 \refstepcounter{problem}
 \textbf{\problemheadfont\textsf{%
-\ifdefined\ShortProblemTitle\else{\kw@Problem\ \if@arabic\arabic{problem}\else\Alph{problem}\fi.\ }\fi%
+\ifdefined\ShortProblemTitle\else{\rl{\kw@Problem\ \if@arabic\arabic{problem}\else\fi \if@persian \arabic{problem} \else \Aleph{problem} \fi.\  }}\fi%
 #1%
 \ifdefined\DivisionNumber%
 \if\DivisionNumber2%
