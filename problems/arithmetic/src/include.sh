@@ -1,6 +1,0 @@
-#!/bin/bash
-PROBLEM=arithmetic
-AUTHOR=ik
-SOL=$PROBLEM\_$AUTHOR
-DOCLEAN=true
-CUSTOMWIPE= 
