@@ -1,8 +1,9 @@
 \documentclass[11pt,a4paper,oneside]{article}
 
-\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{olymp}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -13,15 +14,7 @@
 \usepackage{wrapfig} % for having text alongside pictures
 \usepackage{verbatim}
 \usepackage{array} % compatibility check
-\usepackage{xepersian}
-\settextfont{XB Yas}
-\usepackage[persian]{olymp}
 
-\newcommand{\importproblem}[1]{\import{../problems/#1/statement/}{./#1.fa.tex}}
+\newcommand{\importproblem}[1]{\import{../problems/#1/statement/}{./#1.en.tex}}
 
-% 1st arg: problem name
-% 2nd arg: test-case type : in or out
-% 3rd arg: test-case number
-\newcommand{\importproblemtestcase}[3]{\import{../problems/#1/test-cases/#2/}{./#2put#3.txt}}
-
-\input{121014.inc.tex}
+\input{HW1.inc.tex}
