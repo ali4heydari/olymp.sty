@@ -20,14 +20,21 @@
 \relpenalty=10000
 \exhyphenpenalty=10000
 
+%----------------------- import test-case command --------------------------
+% 1st arg: problem name
+% 2nd arg: test-case type : in or out
+% 3rd arg: test-case number
+\newcommand{\importproblemtestcase}[3]{\LTR \import{../problems/#1/test-cases/#2/}{./#2put#3.txt}}
+% --------------------------------------------------------------------------
+
 \begin{document}
 
     \raggedbottom
 
 %    \displayauthorinfootertrue
     \importproblem{reverse-print}
-    \importproblem{weekdays}
     \importproblem{ice-maker}
+    \importproblem{weekdays}
     %\displaydeveloperfalse
     %\importproblem{}
 
