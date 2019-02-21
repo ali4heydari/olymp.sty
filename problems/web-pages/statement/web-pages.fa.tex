@@ -1,11 +1,12 @@
+\gdef\thisproblemauthor{\rl{علی حیدری}}
 \begin{problem}{\rl{تارنمای دانشجویی}}
 %{\textsl{standard input}}{\textsl{standard output}}
 {}{}
 {\rl{۱ ثانیه}}{\rl{۱۰۰ مگابایت}}{}
 پس از سال‌ها دانشکده‌ی کامپیوتر علم‌وصنعت تصمیم گرفته است زیرساخت‌هایی برای ساخت تارنمای شخصی برای دانشجویان ایجاد کند به طوری که آدرس این تارنماها تحت دامنه‌ی سایت دانشکده باشد. آقای کندی مسئول تعیین آدرس دانشجویان شده و برای این کار به کمک شما نیاز دارد. آدرس هر دانشجو باید به فرمت
-\rl{\texttt{ce.iust.ac.ir/students/<STUDENT\_USER\_NAME>}}
+\colorbox{gray!10}{\rl{\texttt{ce.iust.ac.ir/students/<STUDENT\_USER\_NAME>}}}
   باشد. که
-\rl{\texttt{<STUDENT\_USER\_NAME>}}
+\colorbox{gray!10}{\rl{\texttt{<STUDENT\_USER\_NAME>}}}
     همان شناسه‌ی کاربری ایمیل دانشکده‌ای دانشجو است. برای اینکه برای تمام دانشجویان قبلی آدرسی با این فرمت ساخته شود باید از بین ایمیل‌های موجود کل دانشجویان علم‌و‌صنعت ایمیل دانشجویان رشته‌ی کامپیوتر را پیدا کنیم و سپس آدرس تارنمای متناظر با آن دانشجو را تولید کنیم.
     \InputFile
  در هر سطر آدرس یک رشته با طول $n$ کاراکتر به عنوان آدرس ایمیل داده می‌شود. تضمین می‌شود که رشته‌ی داده شده ایمیلی معتبر است.
@@ -16,39 +17,93 @@
     \OutputFile
 
 خروجی یک سطر است که آدرس تارنمای دانشجو است. در صورتی که آدرس ایمیل داده شده  آدرس ایمیل دانشکده‌ی دیگر یا هر سرویس‌دهنده‌ی دیگری مانند جیمیل باشد عبارت:
-\lr{\texttt{"Not a CE student"}}
+\colorbox{gray!10}{\lr{\texttt{"Not a CE student"}}}
 چاپ می‌شود.
     \Examples
 
-    \Example
-    \begin{example}
-        \exmp{
-        \importproblemtestcase{web-pages}{in}{1}
-        }{%
-        \importproblemtestcase{web-pages}{out}{1}
-        }
-        %
-    \end{example}
+\Example
+\begin{center}
+    \LTR
+    \renewcommand{\arraystretch}{0}
+    \begin{tabu} to 1.0\textwidth { | X[l] | X[l] | }
+    \hline
+    \begin{center}
+        \textbf{\rl{ورودی نمونه}}
+    \end{center}
+    & \begin{center}
+          \textbf{\rl{خروجی نمونه}}
+    \end{center}  \\
+    \hline
+    \texttt{\importproblemtestcase{web-pages}{in}{1}}  & \texttt{\importproblemtestcase{web-pages}{out}{1}}  \\
+    \hline
+    \end{tabu}
+\end{center}
 
-    \Example
-    \begin{example}
-        \exmp{
-        \importproblemtestcase{web-pages}{in}{2}
-        }{%
-        \importproblemtestcase{web-pages}{out}{2}
-        }
-        %
-    \end{example}
+\Example
+\begin{center}
+    \LTR
+    \renewcommand{\arraystretch}{0}
+    \begin{tabu} to 1.0\textwidth { | X[l] | X[l] | }
+    \hline
+    \begin{center}
+        \textbf{\rl{ورودی نمونه}}
+    \end{center}
+    & \begin{center}
+          \textbf{\rl{خروجی نمونه}}
+    \end{center}  \\
+    \hline
+    \texttt{\importproblemtestcase{web-pages}{in}{2}}  & \texttt{\importproblemtestcase{web-pages}{out}{2}}  \\
+    \hline
+    \end{tabu}
+\end{center}
 
-    \Example
-    \begin{example}
-        \exmp{
-        \importproblemtestcase{web-pages}{in}{3}
-        }{%
-        \importproblemtestcase{web-pages}{out}{3}
-        }
-        %
-    \end{example}
+\Example
+\begin{center}
+    \LTR
+    \renewcommand{\arraystretch}{0}
+    \begin{tabu} to 1.0\textwidth { | X[l] | X[l] | }
+    \hline
+    \begin{center}
+        \textbf{\rl{ورودی نمونه}}
+    \end{center}
+    &\begin{center}
+          \textbf{\rl{خروجی نمونه}}
+    \end{center}  \\
+    \hline
+    \texttt{\importproblemtestcase{web-pages}{in}{3}}  & \texttt{\importproblemtestcase{web-pages}{out}{3}}  \\
+    \hline
+    \end{tabu}
+\end{center}
+
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{1}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{1}
+%        }
+%        %
+%    \end{example}
+%
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{2}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{2}
+%        }
+%        %
+%    \end{example}
+%
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{3}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{3}
+%        }
+%        %
+%    \end{example}
 
 
 \end{problem}
