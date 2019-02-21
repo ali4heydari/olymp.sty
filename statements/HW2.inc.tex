@@ -14,8 +14,8 @@
 
 \contest
 {\rl{دانشکده‌ی مهندسی کامپیوتر دانشگاه علم‌وصنعت}}%
-{\rl{تمرین‌های سری اول برنامه‌سازی پیشرفته}}%
-{\rl{شنبه، ۲۷ بهمن، ۱۳۹۷}}%
+{\rl{تمرین‌های سری دوم برنامه‌سازی پیشرفته}}%
+{\rl{شنبه، ۴ اسفند، ۱۳۹۷}}%
 \binoppenalty=10000
 \relpenalty=10000
 \exhyphenpenalty=10000
@@ -24,7 +24,7 @@
 % 1st arg: problem name
 % 2nd arg: test-case type : in or out
 % 3rd arg: test-case number
-\newcommand{\importproblemtestcase}[3]{\LTR \import{../problems/#1/test-cases/#2/}{./#2put#3.txt}}
+\newcommand{\importproblemtestcase}[3]{ \verbatiminput{../problems/#1/test-cases/#2/#2put#3.txt}}
 % --------------------------------------------------------------------------
 
 \begin{document}
@@ -32,9 +32,9 @@
     \raggedbottom
 
 %    \displayauthorinfootertrue
-    \importproblem{reverse-print}
-    \importproblem{ice-maker}
-    \importproblem{weekdays}
+    \importproblem{web-pages}
+%    \importproblem{ice-maker}
+%    \importproblem{weekdays}
     %\displaydeveloperfalse
     %\importproblem{}
 
