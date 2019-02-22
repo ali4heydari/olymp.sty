@@ -27,6 +27,30 @@
 \newcommand{\importproblemtestcase}[3]{ \verbatiminput{../problems/#1/test-cases/#2/#2put#3.txt}}
 % --------------------------------------------------------------------------
 
+%-----------------------import test-case AUTO ------------------------------
+% 1st arg: problem name
+% 2nd arg: test-case number
+\newcommand{\importTestCaseFromFilePersian}[2]{
+\Example
+\begin{center}
+    \LTR
+    \renewcommand{\arraystretch}{0}
+    \begin{tabu} to 1.0\textwidth { | X[l] | X[l] | }
+    \hline
+    \rowfont{\color{blue}}
+    \begin{center}
+        \textbf{\rl{ورودی نمونه}}
+    \end{center}
+    & \begin{center}
+          \textbf{\rl{خروجی نمونه}}
+    \end{center}  \\
+    \hline
+    \lr{\texttt{\importproblemtestcase{#1}{in}{#2}}}  & \lr{\texttt{\importproblemtestcase{#1}{out}{#2}}}  \\
+    \hline
+    \end{tabu}
+\end{center}
+}
+%---------------------------------------------------------------------------
 \begin{document}
 
     \raggedbottom
@@ -34,7 +58,7 @@
 %    \displayauthorinfootertrue
     \importproblem{web-pages}
     \importproblem{copy-paste}
-%    \importproblem{weekdays}
+    \importproblem{fruit-shop}
 %    \displaydeveloperfalse
     %\importproblem{}
 

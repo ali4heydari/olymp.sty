@@ -1,0 +1,65 @@
+\gdef\thisproblemauthor{\rl{امیرمحمد احساندار}}
+\begin{problem}{\rl{تخفیف عجیب}}
+%{\textsl{standard input}}{\textsl{standard output}}
+{}{}
+{\rl{۱ ثانیه}}{\rl{۱۰۰ مگابایت}}{}
+بوفه‌ی خوابگاه علم‌وصنعت تصمیم گرفته است برای جذب مشتریان جدید به مشتریان خود تخفیف دهد برای همین فرمولی وضع کرده که طبق آن درصد تخفیف هر واحد میوه محاسبه می‌گردد. فرمول تخفیف وعده داده شده به صورت زیر است:
+ \lr{$$ 6 - ( \texttt{NUMBER OF LETTERS OF FRUIT  NAME} ) = \texttt{PERCENT OF DISCOUNT} $$}
+  شما باید برای محاسبه‌ی قیمت نهایی به مشتریان کمک کنید.
+    \InputFile
+ورودی شامل یک سطر است که در آن به ترتیب نام میوه و سپس با یک یا چند فاصله قیمت واحد آن آمده است
+
+    \OutputFile
+
+خروجی یک سطر است که میزان تخفیف تا دقیقا سه رقم اعشار آمده است.
+
+\Explanations
+توجه داشته باشید که نام میوه‌های چند واژه‌ای با آندرلاین
+\colorbox{gray!10}{ \_ }
+از یکدیگر جداشده‌اند
+    \Examples
+
+\importTestCaseFromFilePersian{fruit-shop}{1}
+\Explanation
+
+\begin{equation}
+    6 - 3 = 3
+\end{equation}
+\begin{equation}
+    3.5 - 3.5 \times \frac{3}{100} = 3.395
+\end{equation}
+\importTestCaseFromFilePersian{fruit-shop}{2}
+\importTestCaseFromFilePersian{fruit-shop}{3}
+
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{1}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{1}
+%        }
+%        %
+%    \end{example}
+%
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{2}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{2}
+%        }
+%        %
+%    \end{example}
+%
+%    \Example
+%    \begin{example}
+%        \exmp{
+%        \importproblemtestcase{web-pages}{in}{3}
+%        }{%
+%        \importproblemtestcase{web-pages}{out}{3}
+%        }
+%        %
+%    \end{example}
+
+
+\end{problem}
